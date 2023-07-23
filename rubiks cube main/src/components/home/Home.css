@@ -1,0 +1,32 @@
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../images/background-img.jpg");
+    background-size: cover;
+}
+
+.home h1 {
+    margin-bottom: 30px;
+}
+
+.home .startNowBtn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.home .startNowBtn:hover {
+    border-radius: 24px;
+}
+
+.home .startNowBtn:active {
+    box-shadow: 0px 0px 0px 3px white;
+    transition: box-shadow 0.1s ease-out;
+}
