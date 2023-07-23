@@ -1,0 +1,44 @@
+.topDesign {
+    height: 30%;
+    width: 15%;
+    border-left: 0.5em solid black;
+    border-top: 0.5em solid black;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.topDesign div {
+    width: 80%;
+    height: 80%;
+    margin: 0.6em;
+    border-left: 0.5em solid black;
+    border-top: 0.5em solid black;
+}
+
+.bottomDesign {
+    height: 30%;
+    width: 15%;
+    border-right: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+.bottomDesign div {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    bottom: 0.6em;
+    right: 0.6em;
+    border-right: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+}
+
+@media screen and (max-width: 400px) {
+    .topDesign, .bottomDesign {
+        font-size: 8px;
+        height: 10%;
+    }
+}
