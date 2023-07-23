@@ -1,0 +1,82 @@
+.optionsPage {
+    text-align: center;
+    background: url("../images/background-img.jpg");
+    background-size: cover;
+}
+
+.optionsPage h1 {
+    padding-top: 20px;
+}
+.optionsPage .container {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.optionsPage .container > * {
+    flex-basis: 40%
+}
+
+.container .optionBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.optionBtns .solveBtn {
+    padding: 15px 25px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.solveBtn:hover {
+    border-radius: 28px;
+}
+.solveBtn:active {
+    box-shadow: 0px 0px 0px 3px white;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.optionImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionImgs img{
+    width: 70%;
+}
+
+.gridImg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.gridImg img {
+    width: 30%;
+}
+
+
+@media screen and (max-width: 400px) {
+    .optionsPage h1 {
+        padding-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    .optionsPage .container {
+        flex-direction: column;
+    }
+
+    .optionBtns  .solveBtn{
+        font-size: 0.9rem;
+    }
+}
