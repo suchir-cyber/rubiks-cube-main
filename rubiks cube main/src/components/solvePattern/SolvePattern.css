@@ -1,0 +1,69 @@
+.solvePattern {
+    text-align: center;
+    background: url("../images/background-img.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.solvePattern > * {
+    flex-basis: 40%;
+}
+
+.solvePatternBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.solvePatternBtns button {
+    padding: 15px 20px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.solvePatternBtns button:hover {
+    border-radius: 28px;
+}
+
+.solvePatternBtns button:active {
+    box-shadow: 0px 0px 0px 3px white;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.solvePatternImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solvePatternImgs img{
+    width: 70%;
+}
+
+@media only screen and (max-width: 400px) {
+    .solvePattern {
+        flex-direction: column;
+        
+    }
+
+    .solvePatternBtns {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .solvePatternBtns button {
+        font-size: 1rem;
+    }
+
+    .solvePatternBtns h1 {
+        font-size: 1.5rem;
+        flex-basis: 100%;
+    }
+}
